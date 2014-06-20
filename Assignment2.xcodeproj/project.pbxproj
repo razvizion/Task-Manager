@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D892E718DA2A1B00EC95D8 /* CCTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D892E618DA2A1B00EC95D8 /* CCTask.m */; };
 		32DE857818D9105200EA83DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE857718D9105200EA83DE /* Foundation.framework */; };
 		32DE857A18D9105200EA83DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE857918D9105200EA83DE /* CoreGraphics.framework */; };
 		32DE857C18D9105200EA83DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE857B18D9105200EA83DE /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		32DE859918D9105200EA83DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE857B18D9105200EA83DE /* UIKit.framework */; };
 		32DE85A118D9105200EA83DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32DE859F18D9105200EA83DE /* InfoPlist.strings */; };
 		32DE85A318D9105200EA83DE /* Assignment2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DE85A218D9105200EA83DE /* Assignment2Tests.m */; };
+		32DE85AE18D9109300EA83DE /* CCAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DE85AD18D9109300EA83DE /* CCAddTaskViewController.m */; };
+		32DE85B118D910AA00EA83DE /* CCDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DE85B018D910AA00EA83DE /* CCDetailTaskViewController.m */; };
+		32DE85B418D910B300EA83DE /* CCEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DE85B318D910B300EA83DE /* CCEditTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32D892E518DA2A1B00EC95D8 /* CCTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTask.h; sourceTree = "<group>"; };
+		32D892E618DA2A1B00EC95D8 /* CCTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTask.m; sourceTree = "<group>"; };
 		32DE857418D9105200EA83DE /* Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DE857718D9105200EA83DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32DE857918D9105200EA83DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,12 @@
 		32DE859E18D9105200EA83DE /* Assignment2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment2Tests-Info.plist"; sourceTree = "<group>"; };
 		32DE85A018D9105200EA83DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32DE85A218D9105200EA83DE /* Assignment2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment2Tests.m; sourceTree = "<group>"; };
+		32DE85AC18D9109300EA83DE /* CCAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAddTaskViewController.h; sourceTree = "<group>"; };
+		32DE85AD18D9109300EA83DE /* CCAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAddTaskViewController.m; sourceTree = "<group>"; };
+		32DE85AF18D910AA00EA83DE /* CCDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDetailTaskViewController.h; sourceTree = "<group>"; };
+		32DE85B018D910AA00EA83DE /* CCDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDetailTaskViewController.m; sourceTree = "<group>"; };
+		32DE85B218D910B300EA83DE /* CCEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEditTaskViewController.h; sourceTree = "<group>"; };
+		32DE85B318D910B300EA83DE /* CCEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEditTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32D892E418DA29FE00EC95D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32D892E518DA2A1B00EC95D8 /* CCTask.h */,
+				32D892E618DA2A1B00EC95D8 /* CCTask.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		32DE856B18D9105200EA83DE = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +138,13 @@
 				32DE858918D9105200EA83DE /* Main.storyboard */,
 				32DE858C18D9105200EA83DE /* CCViewController.h */,
 				32DE858D18D9105200EA83DE /* CCViewController.m */,
+				32DE85AC18D9109300EA83DE /* CCAddTaskViewController.h */,
+				32DE85AD18D9109300EA83DE /* CCAddTaskViewController.m */,
+				32DE85AF18D910AA00EA83DE /* CCDetailTaskViewController.h */,
+				32DE85B018D910AA00EA83DE /* CCDetailTaskViewController.m */,
+				32DE85B218D910B300EA83DE /* CCEditTaskViewController.h */,
+				32DE85B318D910B300EA83DE /* CCEditTaskViewController.m */,
+				32D892E418DA29FE00EC95D8 /* Models */,
 				32DE858F18D9105200EA83DE /* Images.xcassets */,
 				32DE857E18D9105200EA83DE /* Supporting Files */,
 			);
@@ -251,8 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DE858818D9105200EA83DE /* CCAppDelegate.m in Sources */,
+				32DE85B118D910AA00EA83DE /* CCDetailTaskViewController.m in Sources */,
+				32DE85AE18D9109300EA83DE /* CCAddTaskViewController.m in Sources */,
 				32DE858418D9105200EA83DE /* main.m in Sources */,
+				32D892E718DA2A1B00EC95D8 /* CCTask.m in Sources */,
 				32DE858E18D9105200EA83DE /* CCViewController.m in Sources */,
+				32DE85B418D910B300EA83DE /* CCEditTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +489,7 @@
 				32DE85A818D9105200EA83DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32DE85A918D9105200EA83DE /* Build configuration list for PBXNativeTarget "Assignment2Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +498,7 @@
 				32DE85AB18D9105200EA83DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
